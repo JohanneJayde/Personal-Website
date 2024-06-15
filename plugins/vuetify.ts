@@ -7,18 +7,18 @@ import { createVuetify, type ThemeDefinition } from "vuetify";
 export default defineNuxtPlugin((app) => {
   const vuetify = createVuetify({
     theme: {
-      defaultTheme: "dark",
+      defaultTheme: "light",
       themes: {
         light: {
           dark: false,
           colors: {
-            primary: "#FF734C",
+            primary: "##F89880",
           },
         },
         dark: {
           dark: true,
           colors: {
-            primary: "#FF734C",
+            primary: "##F89880",
           },
         },
       },

@@ -1,10 +1,9 @@
 <template>
   <v-app>
     <v-app-bar flat>
-      <v-app-bar-title @click="$router.push('/')" style="cursor: pointer">
+      <v-app-bar-title class="text-center">
         Johanne McClenahan
       </v-app-bar-title>
-      <v-btn to="Projects">Projects</v-btn>
     </v-app-bar>
     <v-main>
       <RouterView />
