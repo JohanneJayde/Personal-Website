@@ -22,19 +22,19 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "14"
+          node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm cli
 
       - name: Build static site
-        run: npm run build
+        run: npm run generate
 
       - name: Archive production artifact
         uses: actions/upload-artifact@v2
         with:
-          name: nuxt-site
-          path: .nuxt/dist
+          name: build-output
+          path: .output/public
 
   # Deploy job
   deploy:
