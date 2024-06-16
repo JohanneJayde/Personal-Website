@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar flat>
       <v-app-bar-title class="text-center">
-        Johanne McClenahan Site
+        Johanne McClenahan Personal Site
       </v-app-bar-title>
     </v-app-bar>
     <v-main>
