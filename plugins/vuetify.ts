@@ -12,8 +12,9 @@ export default defineNuxtPlugin((app) => {
         light: {
           dark: false,
           colors: {
-            primary: colors.deepPurple.lighten4,
-            secondary: colors.pink.accent3,
+            primary: colors.deepPurple.accent2,
+            secondary: colors.deepPurple.accent1,
+            section: colors.deepPurple.accent3,
           },
         },
         dark: {

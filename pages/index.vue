@@ -1,13 +1,35 @@
 <template>
   <v-container>
+    <v-row class="justify-center mb-2">
+      <v-col cols="auto">
+        <v-button-group>
+          <v-btn
+            href="https://github.com/JohanneJayde"
+            target="_blank"
+            color="primary"
+            size="large"
+            >Github</v-btn
+          >
+
+          <v-btn
+            href="https://www.linkedin.com/in/johannemcclenahan/"
+            target="_blank"
+            color="primary"
+            size="large"
+            >LinkedIn</v-btn
+          >
+        </v-button-group>
+      </v-col>
+    </v-row>
     <v-card color="primary" class="rounded-xl pa-3">
       <v-card-title>About Me</v-card-title>
-      <v-card-text>
+      <v-card-text class="text-body-1">
         Hello, My name is Johanne McClenahan! I am currently a recent graduate
         from Eastern Washington University in June 2024. My major is Computer
         Science with a minor in Web Application Development. My hobbies include
         puzzles, hiking, and scootering. I hope to learn more and keep growing
-        in the Computer Science field.
+        in the Computer Science field. I currently work as a Software
+        Engineering Intern at IntelliTect in Spokane, WA.
       </v-card-text>
     </v-card>
     <v-row>
