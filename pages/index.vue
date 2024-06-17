@@ -10,44 +10,62 @@
         in the Computer Science field.
       </v-card-text>
     </v-card>
+    <v-row>
+      <v-col cols="12" lg="6">
+        <Section title="Education & Accolades">
+          <template #content>
+            <v-row>
+              <v-col cols="12">
+                <Card
+                  title="Eastern Washington University"
+                  subtitle="2019-2024"
+                  body="Bachelor of Science in Computer Science with a minor in Web Application Development"
+                  color="primary"
+                />
+              </v-col>
+              <v-col cols="12" lg="6">
+                <Card
+                  title="Gonzaga Hackathon 1st Place"
+                  subtitle="November 1st, 2023 "
+                  body="Competed in the GU Hackathon in November 2023 for twelve hours among 120 other students. Led a team of four students in creating a web application. The project was a dashboard for viewing restaurant health inspections in the Spokane area."
+                  color="primary"
+                  :links="[
+                    {
+                      text: 'Article',
+                      href: 'https://www.gonzaga.edu/news-events/stories/2023/11/20/hackathon-2023',
+                    },
+                  ]"
+                />
+              </v-col>
+              <v-col cols="12" lg="6">
+                <Card
+                  title="Outstanding Senior Student"
+                  subtitle="June 2024"
+                  body="Awarded to the top student in the Computer Science Department at Eastern Washington University."
+                  color="primary"
+                />
+              </v-col>
+            </v-row>
+          </template>
+        </Section>
+      </v-col>
 
-    <Section title="Education & Accolades">
-      <template #content>
-        <v-row>
-          <v-col cols="12">
-            <Card
-              title="Eastern Washington University"
-              subtitle="2019-2024"
-              body="Bachelor of Science in Computer Science with a minor in Web Application Development"
-              color="primary"
-            />
-          </v-col>
-          <v-col cols="12" lg="6">
-            <Card
-              title="Gonzaga Hackathon 1st Place"
-              subtitle="November 1st, 2023 "
-              body="Competed in the GU Hackathon in November 2023 for twelve hours among 120 other students. Led a team of four students in creating a web application. The project was a dashboard for viewing restaurant health inspections in the Spokane area."
-              color="primary"
-              :links="[
-                {
-                  text: 'Article',
-                  href: 'https://www.gonzaga.edu/news-events/stories/2023/11/20/hackathon-2023',
-                },
-              ]"
-            />
-          </v-col>
-          <v-col cols="12" lg="6">
-            <Card
-              title="Outstanding Senior Student"
-              subtitle="June 2024"
-              body="Awarded to the top student in the Computer Science Department at Eastern Washington University."
-              color="primary"
-            />
-          </v-col>
-        </v-row>
-      </template>
-    </Section>
-
+      <v-col cols="12" lg="6">
+        <Section title="Skills">
+          <template #content>
+            <v-row class="ga-3 justify-center ma-3">
+              <SkillCard title="Java" />
+              <SkillCard title="HTML" />
+              <SkillCard title="CSS" />
+              <SkillCard title="SQL" />
+              <SkillCard title="C#" />
+              <SkillCard title="Javascript" />
+              <SkillCard title="Vue.js" />
+            </v-row>
+          </template>
+        </Section>
+      </v-col>
+    </v-row>
     <Section title="Projects">
       <template #content>
         <v-row>
@@ -145,20 +163,6 @@
       </template>
     </Section>
 
-    <Section title="Skills">
-      <template #content>
-        <v-row class="ga-3 justify-center ma-3">
-          <SkillCard title="Java" />
-          <SkillCard title="HTML" />
-          <SkillCard title="CSS" />
-          <SkillCard title="SQL" />
-          <SkillCard title="C#" />
-          <SkillCard title="Javascript" />
-          <SkillCard title="Vue.js" />
-        </v-row>
-      </template>
-    </Section>
-
     <Section title="Jobs">
       <template #content>
         <v-row>
@@ -197,17 +201,17 @@
           </v-col>
           <v-col cols="12" lg="6">
             <Card
-              title="High School Tutor"
-              subtitle="October 21st, 2018 to December 17th, 2018"
-              body="Tutored Students who had trouble passing certain subjects for an hour for two days a week."
+              title="CSCD210 PLUS Group Leader, Eastern Washington University"
+              subtitle="October 24th, 2022 to December 9th, 2023"
+              body="Led a study group for CSCD210, which covers the basic concepts and applications of the Java programming language. Duties include preparing activies to help with competency in two fifty minute study sessions over the course, two times a week."
               color="primary"
             />
           </v-col>
           <v-col cols="12" lg="6">
             <Card
-              title="Engineering Intern, Electric (Utility) Department, City of Sitka"
-              subtitle="July 16th, 2019 to Sept. 17th, 2019"
-              body="Scanned, filed, and logged over 1425 Alaska Lumber and Pulp Company drawings with a value above $1,000,000. Worked with AutoCad to edit large-scale building schematics."
+              title="Associated Press Election Vote Entry Operator"
+              subtitle="October 8th, 2022 to November 8th, 2022"
+              body="Worked with Associated Press Election by helping with entering state ballots to help keep their results up to date to be used by news outlets."
               color="primary"
             />
           </v-col>
@@ -221,17 +225,18 @@
           </v-col>
           <v-col cols="12" lg="6">
             <Card
-              title="CSCD210 PLUS Group Leader, Eastern Washington University"
-              subtitle="October 24th, 2022 to December 9th, 2023"
-              body="Led a study group for CSCD210, which covers the basic concepts and applications of the Java programming language. Duties include preparing activies to help with competency in two fifty minute study sessions over the course, two times a week."
+              title="Engineering Intern, Electric (Utility) Department, City of Sitka"
+              subtitle="July 16th, 2019 to Sept. 17th, 2019"
+              body="Scanned, filed, and logged over 1425 Alaska Lumber and Pulp Company drawings with a value above $1,000,000. Worked with AutoCad to edit large-scale building schematics."
               color="primary"
             />
           </v-col>
+
           <v-col cols="12" lg="6">
             <Card
-              title="Associated Press Election Vote Entry Operator"
-              subtitle="October 8th, 2022 to November 8th, 2022"
-              body="Worked with Associated Press Election by helping with entering state ballots to help keep their results up to date to be used by news outlets."
+              title="High School Tutor"
+              subtitle="October 21st, 2018 to December 17th, 2018"
+              body="Tutored Students who had trouble passing certain subjects for an hour for two days a week."
               color="primary"
             />
           </v-col>
