@@ -34,7 +34,7 @@
             <v-row>
               <v-col cols="12">
                 <Card
-                  title="Eastern Washington University"
+                  title="Eastern Washington University, BA in Computer Science, GPA: 3.95"
                   subtitle="2019-2024"
                   body="Bachelor of Science in Computer Science with a minor in Web Application Development"
                   color="primary"
@@ -70,14 +70,32 @@
       <v-col cols="12" lg="6">
         <Section title="Skills">
           <template #content>
-            <v-row class="ga-3 justify-center ma-3">
-              <SkillCard title="Java" />
-              <SkillCard title="HTML" />
-              <SkillCard title="CSS" />
-              <SkillCard title="SQL" />
-              <SkillCard title="C#" />
-              <SkillCard title="Javascript" />
-              <SkillCard title="Vue.js" />
+            <v-row class="justify-center">
+              <v-col cols="auto">
+                <SkillCard title="Java" />
+              </v-col>
+
+              <v-col cols="auto">
+                <SkillCard title="HTML" />
+              </v-col>
+              <v-col cols="auto">
+                <SkillCard title="CSS" />
+              </v-col>
+              <v-col cols="auto">
+                <SkillCard title="SQL" />
+              </v-col>
+              <v-col cols="auto">
+                <SkillCard title="C#" />
+              </v-col>
+              <v-col cols="auto">
+                <SkillCard title="Javascript" />
+              </v-col>
+              <v-col cols="auto">
+                <SkillCard title="Vue.js" />
+              </v-col>
+              <v-col cols="auto">
+                <SkillCard title="WordPress" />
+              </v-col>
             </v-row>
           </template>
         </Section>
