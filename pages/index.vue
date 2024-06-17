@@ -66,7 +66,6 @@
           </template>
         </Section>
       </v-col>
-
       <v-col cols="12" lg="6">
         <Section title="Skills">
           <template #content>
@@ -197,7 +196,6 @@
         </v-row>
       </template>
     </Section>
-
     <Section title="Jobs">
       <template #content>
         <v-row>
@@ -278,7 +276,6 @@
         </v-row>
       </template>
     </Section>
-
     <Section title="Public Service">
       <template #content>
         <v-row>
