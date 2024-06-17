@@ -6,7 +6,7 @@
     <v-card-subtitle>{{ subtitle }}</v-card-subtitle>
     <v-card-text>{{ body }}</v-card-text>
 
-    <v-card-actions>
+    <v-card-actions v-if="links">
       <v-btn
         v-for="link in links"
         :key="link.text"

@@ -11,6 +11,43 @@
       </v-card-text>
     </v-card>
 
+    <Section title="Education & Accolades">
+      <template #content>
+        <v-row>
+          <v-col cols="12">
+            <Card
+              title="Eastern Washington University"
+              subtitle="2019-2024"
+              body="Bachelor of Science in Computer Science with a minor in Web Application Development"
+              color="primary"
+            />
+          </v-col>
+          <v-col cols="12" lg="6">
+            <Card
+              title="Gonzaga Hackathon 1st Place"
+              subtitle="November 1st, 2023 "
+              body="Competed in the GU Hackathon in November 2023 for twelve hours among 120 other students. Led a team of four students in creating a web application. The project was a dashboard for viewing restaurant health inspections in the Spokane area."
+              color="primary"
+              :links="[
+                {
+                  text: 'Article',
+                  href: 'https://www.gonzaga.edu/news-events/stories/2023/11/20/hackathon-2023',
+                },
+              ]"
+            />
+          </v-col>
+          <v-col cols="12" lg="6">
+            <Card
+              title="Outstanding Senior Student"
+              subtitle="June 2024"
+              body="Awarded to the top student in the Computer Science Department at Eastern Washington University."
+              color="primary"
+            />
+          </v-col>
+        </v-row>
+      </template>
+    </Section>
+
     <Section title="Projects">
       <template #content>
         <v-row>
@@ -47,7 +84,7 @@
             <Card
               title="Picross Unlimited"
               subtitle="06/24 - Pressent"
-              body="Created a Picross clone using Vue.js and Vuetify. The game is a puzzle game where the player fills in squares on a grid to reveal a picture. The game is responsive and can be played on mobile devices."
+              body="Created a Picross clone using Vue.js and Vuetify. The game is a puzzle game where the player fills in squares on a grid to reveal a picture. Users can preform CRUD operations on the game to create their own puzzles."
               color="primary"
               :links="[
                 {
