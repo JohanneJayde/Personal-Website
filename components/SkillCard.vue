@@ -5,7 +5,7 @@
     width="100"
     color="primary"
   >
-    <span class="text-wrap font-weight-bold text-secondary">{{ title }} </span>
+    <span class="text-wrap font-weight-bold">{{ title }} </span>
   </v-card>
 </template>
 

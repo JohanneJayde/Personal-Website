@@ -17,3 +17,15 @@
     </v-main>
   </v-app>
 </template>
+
+<script setup lang="ts">
+useHead({
+  title: "Johanne McClenahan",
+  meta: [
+    {
+      name: "description",
+      content: "Johanne McClenahan Portfolio",
+    },
+  ],
+});
+</script>
