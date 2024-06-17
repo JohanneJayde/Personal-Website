@@ -7,12 +7,12 @@
     </v-app-bar>
 
     <v-main>
-      <RouterView />
+      <NuxtPage />
     </v-main>
 
     <v-footer app color="primary">
       <span>&copy; {{ new Date().getFullYear() }} Johanne McClenahan</span>
-      <v-spacer></v-spacer>
+      <v-spacer />
       <span>Contact: johanne.jayde@gmail.com</span>
     </v-footer>
   </v-app>

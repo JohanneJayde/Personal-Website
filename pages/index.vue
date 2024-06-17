@@ -1,6 +1,5 @@
 <template>
   <v-container>
-    <v-row class="justify-center mb-2"> </v-row>
     <v-card color="primary" class="rounded-xl pa-3">
       <v-card-title>About Me</v-card-title>
       <v-card-text class="text-body-1">
