@@ -34,7 +34,7 @@
             <v-row>
               <v-col cols="12">
                 <Card
-                  title="Eastern Washington University, BA in Computer Science, GPA: 3.95"
+                  title="Eastern Washington University, BS in Computer Science, GPA: 3.95"
                   subtitle="2019-2024"
                   body="Bachelor of Science in Computer Science with a minor in Web Application Development"
                   color="primary"

@@ -1,8 +1,8 @@
 <template>
   <v-app>
     <v-app-bar flat color="primary">
-      <v-app-bar-title class="text-center font-weight-bold"
-        >Johanne McClenahan
+      <v-app-bar-title class="text-center font-weight-bold">
+        Johanne McClenahan
       </v-app-bar-title>
     </v-app-bar>
 
