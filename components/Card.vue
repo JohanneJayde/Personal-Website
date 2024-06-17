@@ -28,11 +28,11 @@
 </style>
 
 <script setup lang="ts">
-defineProps({
-  title: String,
-  subtitle: String,
-  body: String,
-  color: String,
-  links: Array<{ text: string; href: string }>,
-});
+defineProps<{
+  title: string;
+  subtitle: string;
+  body: string;
+  color: string;
+  links?: { text: string; href: string }[];
+}>();
 </script>
