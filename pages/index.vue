@@ -173,7 +173,7 @@
               :links="[
                 {
                   text: 'Github',
-                  href: 'https://github.com/JohanneJayde/Gonzaga-Hackathon-2023',
+                  href: 'https://github.com/JohanneJayde/Spokane-Restaurant-Health-Inspection-Dashboard',
                 },
               ]"
               ,
