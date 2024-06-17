@@ -1,26 +1,6 @@
 <template>
   <v-container>
-    <v-row class="justify-center mb-2">
-      <v-col cols="auto">
-        <v-button-group>
-          <v-btn
-            href="https://github.com/JohanneJayde"
-            target="_blank"
-            color="primary"
-            size="large"
-            >Github</v-btn
-          >
-
-          <v-btn
-            href="https://www.linkedin.com/in/johannemcclenahan/"
-            target="_blank"
-            color="primary"
-            size="large"
-            >LinkedIn</v-btn
-          >
-        </v-button-group>
-      </v-col>
-    </v-row>
+    <v-row class="justify-center mb-2"> </v-row>
     <v-card color="primary" class="rounded-xl pa-3">
       <v-card-title>About Me</v-card-title>
       <v-card-text class="text-body-1">
@@ -31,6 +11,21 @@
         in the Computer Science field. I currently work as a Software
         Engineering Intern at IntelliTect in Spokane, WA.
       </v-card-text>
+      <v-card-actions class="d-flex justify-center">
+        <v-btn
+          href="https://github.com/JohanneJayde"
+          target="_blank"
+          variant="outlined"
+          >Github</v-btn
+        >
+
+        <v-btn
+          href="https://www.linkedin.com/in/johannemcclenahan/"
+          target="_blank"
+          variant="outlined"
+          >LinkedIn</v-btn
+        >
+      </v-card-actions>
     </v-card>
     <v-row>
       <v-col cols="12" lg="6">
@@ -271,18 +266,23 @@
         <v-row>
           <v-col cols="12" lg="6">
             <Card
-              title="National Honors Society"
-              subtitle="April, 23rd, 2018 – May 9th, 2019"
-              body="Volunteered around the town of Sitka and raised money for charities through fundraising events, logged over 20 hours of service, and served as vice president of the NHS for my senior year of high school."
+              title="President - Association For Computer Machinery EWU Chapter"
+              subtitle="December 15th, 2023 - Present"
+              body="Currently president of EWU’s chapter of ACM. I work with other officers to help plan events and get more engagement for Computer Science at EWU. In charge of planning EWU’s first Hackathon, Codefest 2024, slated for April 2024"
               color="primary"
+              :links="[
+                {
+                  text: 'Codefest 2024',
+                  href: 'https://inside.ewu.edu/csacm/ewu-codefest-2024/',
+                },
+              ]"
             />
           </v-col>
-
           <v-col cols="12" lg="6">
             <Card
-              title="Eagle Up"
-              subtitle="October 5th, 2019"
-              body="Volunteered for three hours helping Transitions, a women’s shelter, by improving patients around the lawn and garden."
+              title="Treasurer - Asian Student Association"
+              subtitle="February 23rd, 2023 - April 10th, 2024"
+              body="Served as the first treasurer for the Asian Student Association, managing financials and budget. The ASA Spring Market is a yearly event that we put on to bring awareness of Asian culture to the greater EWU population."
               color="primary"
             />
           </v-col>
@@ -296,9 +296,17 @@
           </v-col>
           <v-col cols="12" lg="6">
             <Card
-              title="Treasurer - Asian Student Association"
-              subtitle="February 23rd, 2023 - April 10th, 2024"
-              body="Served as the first treasurer for the Asian Student Association, managing financials and budget. The ASA Spring Market is a yearly event that we put on to bring awareness of Asian culture to the greater EWU population."
+              title="Eagle Up"
+              subtitle="October 5th, 2019"
+              body="Volunteered for three hours helping Transitions, a women’s shelter, by improving patients around the lawn and garden."
+              color="primary"
+            />
+          </v-col>
+          <v-col cols="12" lg="6">
+            <Card
+              title="National Honors Society"
+              subtitle="April, 23rd, 2018 – May 9th, 2019"
+              body="Volunteered around the town of Sitka and raised money for charities through fundraising events, logged over 20 hours of service, and served as vice president of the NHS for my senior year of high school."
               color="primary"
             />
           </v-col>
