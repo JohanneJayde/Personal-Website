@@ -200,8 +200,8 @@
         <v-row>
           <v-col cols="12" lg="6">
             <Card
-              title="Software Engineering Intern, IntelliTect"
-              subtitle="4/24 to 6/24"
+              title="Associate Software Engineer, IntelliTect"
+              subtitle="Intern (4/24 - 6/24) Associate (6/24 to 8/24)"
               body="Worked a team to help improve internal project management site for company. Worked with Github to do code reviews and merging updates into the main production site. Project used ASP.NET, Vue.js, and Coalesce Framework."
               color="primary"
             />
@@ -290,6 +290,14 @@
                   href: 'https://inside.ewu.edu/csacm/ewu-codefest-2024/',
                 },
               ]"
+            />
+          </v-col>
+          <v-col cols="12" lg="6">
+            <Card
+              title="Volunteer - GenCyber Camp 2023"
+              subtitle="July 23rd, 2023 - July 27th, 2023"
+              body="Helped at Eastern Washington University's GenCyber Camp. GenCyber is a series of camps held around the country to help provide opportunities for students to learn about Cybersecurity. Helped high schoolers with various activites including learning basic linux, basic networking, and CTFs."
+              color="primary"
             />
           </v-col>
           <v-col cols="12" lg="6">
