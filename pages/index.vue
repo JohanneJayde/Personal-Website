@@ -142,10 +142,6 @@
                   text: 'Github',
                   href: 'https://github.com/JohanneJayde/Picross-Unlimited',
                 },
-                {
-                  text: 'Play',
-                  href: 'https://jolly-flower-0d95a501e.5.azurestaticapps.net/',
-                },
               ]"
             />
           </v-col>
