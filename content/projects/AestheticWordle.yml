@@ -1,0 +1,18 @@
+title: Aesthetic Wordle
+description: Aesthetic Wordle is a Wordle clone with a focus on aesthetics and user experience. It is built using Nuxt.js and ASP.NET Core.
+category: projects
+techStack:
+  - Nuxt.js (Vue.js)
+  - ASP.NET Core
+  - Azure
+  - GitHub Actions
+  - Jest
+  - GitHub
+  - Git
+
+features:
+  - Wordle clone with a focus on aesthetics and user experience
+  - multiple themes
+  - View statistics of your games
+  - Rank yourself with leaderboard
+  - replay old games

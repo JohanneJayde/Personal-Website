@@ -7,10 +7,9 @@
         from Eastern Washington University in June 2024. My major is Computer
         Science with a minor in Web Application Development. My hobbies include
         puzzles, hiking, and scootering. I hope to learn more and keep growing
-        in the Computer Science field. I currently work as a Software
-        Engineering Intern at IntelliTect in Spokane, WA.
+        in the Computer Science field. I currently work look for work as a
+        software engineer.
       </v-card-text>
-      <v-card-actions class="d-flex justify-center"> </v-card-actions>
     </v-card>
     <v-row>
       <v-col cols="12" lg="6">
