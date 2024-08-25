@@ -87,90 +87,13 @@
     <Section title="Projects">
       <template #content>
         <v-row>
-          <v-col cols="12" lg="4">
+          <v-col cols="12" lg="4" v-for="(project, i) in projectContent">
             <Card
-              title="Eagle Adventure App"
-              subtitle="6/23 to 8/23"
-              body="Developed a Quest app for the EWU Summer Bridge program. The application was developed using C# and Unity to work on IOS and Android devices. The app was used to help students navigate the campus and learn about the resources available to them."
+              :title="project.title!"
+              :subtitle="project.date!"
+              :body="project.stinger!"
               color="primary"
-              :links="[
-                {
-                  text: 'Github',
-                  href: 'https://github.com/JohanneJayde/Eagle-Adventures',
-                },
-              ]"
-            />
-          </v-col>
-          <v-col cols="12" lg="4">
-            <Card
-              title="Aesthetic Wordle"
-              subtitle="03/24 - Pressent"
-              body="Created a Wordle clone using Vue.js and Vuetify. The game is a word guessing game where the player has six chances to guess the word. The game is responsive and can be played on mobile devices."
-              color="primary"
-              :links="[
-                {
-                  text: 'Github',
-                  href: 'https://github.com/JohanneJayde/Aesthetic-Wordle',
-                },
-                { text: 'Play', href: 'https://aestheticwordle.com/' },
-              ]"
-            />
-          </v-col>
-          <v-col cols="12" lg="4">
-            <Card
-              title="Picross Unlimited"
-              subtitle="06/24 - Pressent"
-              body="Created a Picross clone using Vue.js and Vuetify. The game is a puzzle game where the player fills in squares on a grid to reveal a picture. Users can preform CRUD operations on the game to create their own puzzles."
-              color="primary"
-              :links="[
-                {
-                  text: 'Github',
-                  href: 'https://github.com/JohanneJayde/Picross-Unlimited',
-                },
-              ]"
-            />
-          </v-col>
-          <v-col cols="12" lg="4">
-            <Card
-              title="Geospatial Visualization Notification System"
-              subtitle="09/23-03/24"
-              body="Created a wildfire notification system for the Fairchild Airforce Base using open source data from the National Interagency Fire Center. The tech stack for this project was vanilla HTML, CSS, and JS with PHP. We utilzed the OpenLayers API to display map data. The project was a collaboration between Eastern Washington University and Fairchild Airforce Base."
-              color="primary"
-              :links="[
-                {
-                  text: 'Github',
-                  href: 'https://github.com/JohanneJayde/geospatial-visualization-notification-system',
-                },
-              ]"
-            />
-          </v-col>
-          <v-col cols="12" lg="4">
-            <Card
-              title="Spokane Restaurant Health Inspection Dashboard"
-              subtitle="11/23"
-              body="Competed in the GU Hackathon in November 2023 for twelve hours among 120 other students. Led a team of four students in creating a web application. The project was a dashboard for viewing restaurant health inspections in the Spokane area."
-              color="primary"
-              :links="[
-                {
-                  text: 'Github',
-                  href: 'https://github.com/JohanneJayde/Spokane-Restaurant-Health-Inspection-Dashboard',
-                },
-              ]"
-              ,
-            />
-          </v-col>
-          <v-col cols="12" lg="4">
-            <Card
-              title="Iterations"
-              subtitle="03/24"
-              body="Participated in the Internal Hackathon at Intellitect over a 24 hour period. Game was made using Unreal Engine 5. Made player environments and worked on the dialogue for the game."
-              color="primary"
-              :links="[
-                {
-                  text: 'Steam',
-                  href: 'https://store.steampowered.com/app/2937490/Iterations/',
-                },
-              ]"
+              :links="project.links!"
             />
           </v-col>
         </v-row>
@@ -318,3 +241,7 @@
     </Section>
   </v-container>
 </template>
+
+<script setup lang="ts">
+const projectContent = await queryContent("/projects/").find();
+</script>

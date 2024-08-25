@@ -1,7 +1,11 @@
 <template>
   <v-app>
     <v-app-bar flat color="primary">
-      <v-app-bar-title class="font-weight-bold">
+      <v-app-bar-title
+        class="font-weight-bold"
+        @click="$router.push('/')"
+        style="cursor: pointer"
+      >
         Johanne McClenahan
       </v-app-bar-title>
       <v-spacer />
@@ -18,12 +22,20 @@
         >LinkedIn</v-btn
       >
       <v-btn-toggle v-model="viewMode">
-        <v-btn value="blue"> Blue </v-btn>
-        <v-btn value="green"> Green </v-btn>
-        <v-btn value="red"> Red </v-btn>
+        <v-btn value="blue"> Projects </v-btn>
+        <v-btn value="green"> Jobs </v-btn>
+        <v-btn value="red"> Volunteer </v-btn>
       </v-btn-toggle>
-      <template #extension>
-        <ViewMenu :mode="viewMode" />
+      <template #extension v-if="viewMode">
+        <v-btn-toggle>
+          <v-btn
+            v-for="project in projectContent"
+            :key="project.title"
+            :to="project._path"
+          >
+            {{ project.title }}
+          </v-btn>
+        </v-btn-toggle>
       </template>
     </v-app-bar>
 
@@ -49,6 +61,8 @@ useHead({
     },
   ],
 });
+
+const projectContent = await queryContent("/projects/").find();
 
 const viewMode = ref<string | null>("red");
 </script>

@@ -1,6 +1,7 @@
 title: Picross Unlimited
-description: Picross clone
+description: Aesthetic Wordle is a Wordle clone with a focus on aesthetics and user experience. It is built using Nuxt.js and ASP.NET Core.
 category: projects
+date: 03/24 - Pressent
 techStack:
   - Nuxt.js (Vue.js)
   - ASP.NET Core
@@ -9,7 +10,15 @@ techStack:
   - Jest
   - GitHub
 features:
+  - Wordle clone with a focus on aesthetics and user experience
   - multiple themes
   - View statistics of your games
   - Rank yourself with leaderboard
   - replay old games
+
+stinger: Created a Wordle clone using Vue.js and Vuetify. The game is a word guessing game where the player has six chances to guess the word. The game is responsive and can be played on mobile devices.
+links:
+  - text: "Github"
+    href: "https://github.com/JohanneJayde/Aesthetic-Wordle"
+  - text: "Play"
+    href: "https://aestheticwordle.com/"
