@@ -9,27 +9,22 @@
         Johanne McClenahan
       </v-app-bar-title>
       <v-spacer />
-      <v-btn
-        href="https://github.com/JohanneJayde"
-        target="_blank"
-        variant="outlined"
+      <v-btn href="https://github.com/JohanneJayde" target="_blank"
         >Github</v-btn
       >
       <v-btn
         href="https://www.linkedin.com/in/johannemcclenahan/"
         target="_blank"
-        variant="outlined"
         >LinkedIn</v-btn
       >
-      <v-btn-toggle v-model="viewMode">
-        <v-btn value="projects" to="/projectsoverview"> Projects </v-btn>
-        <v-btn value="jobs"> Jobs </v-btn>
-        <v-btn value="volunteer"> Volunteer </v-btn>
-      </v-btn-toggle>
+      <v-btn value="projects" @click="toProjects"> Projects </v-btn>
       <template #extension v-if="viewMode">
         <v-btn-toggle>
           <v-btn
+            class="bg-primary rounded-0"
+            style="border-right: 1px solid white"
             color="primary"
+            size="small"
             v-for="project in projectContent"
             :key="project.title"
             :to="project._path"
@@ -72,6 +67,11 @@ const route = useRoute();
 const returnHome = () => {
   router.push("/");
   viewMode.value = null;
+};
+
+const toProjects = () => {
+  router.push("/projectsoverview");
+  viewMode.value = "projects";
 };
 
 onMounted(() => {

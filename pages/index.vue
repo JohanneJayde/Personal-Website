@@ -84,21 +84,9 @@
         </Section>
       </v-col>
     </v-row>
-    <Section title="Projects">
-      <template #content>
-        <v-row>
-          <v-col cols="12" lg="4" v-for="(project, i) in projectContent">
-            <Card
-              :title="project.title!"
-              :subtitle="project.date!"
-              :body="project.stinger!"
-              color="primary"
-              :links="project.links!"
-            />
-          </v-col>
-        </v-row>
-      </template>
-    </Section>
+    <v-card to="/projectsoverview">
+      <v-card-title>Projects</v-card-title>
+    </v-card>
     <Section title="Jobs">
       <template #content>
         <v-row>
