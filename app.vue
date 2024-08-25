@@ -17,6 +17,14 @@
         variant="outlined"
         >LinkedIn</v-btn
       >
+      <v-btn-toggle v-model="viewMode">
+        <v-btn value="blue"> Blue </v-btn>
+        <v-btn value="green"> Green </v-btn>
+        <v-btn value="red"> Red </v-btn>
+      </v-btn-toggle>
+      <template #extension>
+        <ViewMenu :mode="viewMode" />
+      </template>
     </v-app-bar>
 
     <v-main>
@@ -41,4 +49,6 @@ useHead({
     },
   ],
 });
+
+const viewMode = ref<string | null>("red");
 </script>
