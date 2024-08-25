@@ -3,7 +3,7 @@
     <v-app-bar flat color="primary">
       <v-app-bar-title
         class="font-weight-bold"
-        @click="$router.push('/')"
+        @click="returnHome"
         style="cursor: pointer"
       >
         Johanne McClenahan
@@ -29,6 +29,7 @@
       <template #extension v-if="viewMode">
         <v-btn-toggle>
           <v-btn
+            color="primary"
             v-for="project in projectContent"
             :key="project.title"
             :to="project._path"
@@ -64,5 +65,11 @@ useHead({
 
 const projectContent = await queryContent("/projects/").find();
 
-const viewMode = ref<string | null>("red");
+const viewMode = ref<string | null>(null);
+
+const router = useRouter();
+const returnHome = () => {
+  router.push("/");
+  viewMode.value = null;
+};
 </script>
