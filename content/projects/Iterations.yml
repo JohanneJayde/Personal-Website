@@ -3,22 +3,13 @@ description: Aesthetic Wordle is a Wordle clone with a focus on aesthetics and u
 category: projects
 date: 03/24 - Pressent
 techStack:
-  - Nuxt.js (Vue.js)
-  - ASP.NET Core
-  - Azure
-  - GitHub Actions
-  - Jest
-  - GitHub
+  - C++
+  - Unreal Engine
 features:
-  - Wordle clone with a focus on aesthetics and user experience
-  - multiple themes
-  - View statistics of your games
-  - Rank yourself with leaderboard
-  - replay old games
+  - Interactive story
+  - Play with multiple endings
 
-stinger: Created a Wordle clone using Vue.js and Vuetify. The game is a word guessing game where the player has six chances to guess the word. The game is responsive and can be played on mobile devices.
+stinger: Participated in the Internal Hackathon at Intellitect over a 24 hour period. Game was made using Unreal Engine 5. Made player environments and worked on the dialogue for the game.
 links:
-  - text: "Github"
-    href: "https://github.com/JohanneJayde/Aesthetic-Wordle"
-  - text: "Play"
-    href: "https://aestheticwordle.com/"
+  - text: Steam
+    href: https://store.steampowered.com/app/2937490/Iterations/

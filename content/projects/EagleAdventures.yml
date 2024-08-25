@@ -3,22 +3,19 @@ description: Aesthetic Wordle is a Wordle clone with a focus on aesthetics and u
 category: projects
 date: 03/24 - Pressent
 techStack:
-  - Nuxt.js (Vue.js)
-  - ASP.NET Core
-  - Azure
-  - GitHub Actions
-  - Jest
-  - GitHub
+  - C#
+  - Unity
+  - Firebase
+  - AppScript
 features:
-  - Wordle clone with a focus on aesthetics and user experience
-  - multiple themes
-  - View statistics of your games
-  - Rank yourself with leaderboard
-  - replay old games
+  - Complete quests to learn about the EWU departments
+  - Gain coins for completing quests
+  - Redeem coins by entering codes from the departments at the end of the event
+  - "Four different types of quests: canvas, no-code, physical, and short answer"
+  - Interactive tutorial for showing how to complete quests and use the app
+  - Navigate to the canvas app from the app to view canvas quests
 
-stinger: Created a Wordle clone using Vue.js and Vuetify. The game is a word guessing game where the player has six chances to guess the word. The game is responsive and can be played on mobile devices.
+stinger: Developed a Quest app for the EWU Summer Bridge program. The application was developed using C# and Unity to work on IOS and Android devices. The app was used to help students navigate the campus and learn about the resources available to them.
 links:
-  - text: "Github"
-    href: "https://github.com/JohanneJayde/Aesthetic-Wordle"
-  - text: "Play"
-    href: "https://aestheticwordle.com/"
+  - text: Github
+    href: https://github.com/JohanneJayde/Eagle-Adventures

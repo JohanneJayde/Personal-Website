@@ -22,9 +22,9 @@
         >LinkedIn</v-btn
       >
       <v-btn-toggle v-model="viewMode">
-        <v-btn value="blue"> Projects </v-btn>
-        <v-btn value="green"> Jobs </v-btn>
-        <v-btn value="red"> Volunteer </v-btn>
+        <v-btn value="projects" to="/projectsoverview"> Projects </v-btn>
+        <v-btn value="jobs"> Jobs </v-btn>
+        <v-btn value="volunteer"> Volunteer </v-btn>
       </v-btn-toggle>
       <template #extension v-if="viewMode">
         <v-btn-toggle>
@@ -68,8 +68,15 @@ const projectContent = await queryContent("/projects/").find();
 const viewMode = ref<string | null>(null);
 
 const router = useRouter();
+const route = useRoute();
 const returnHome = () => {
   router.push("/");
   viewMode.value = null;
 };
+
+onMounted(() => {
+  if (route.path === "/projectsoverview" || route.path.match("/projects/")) {
+    viewMode.value = "projects";
+  }
+});
 </script>
