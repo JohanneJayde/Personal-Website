@@ -231,5 +231,8 @@
 </template>
 
 <script setup lang="ts">
-const projectContent = await queryContent("/projects/").find();
+const projectContent = await queryContent("/project/").find();
+const jobContent = await queryContent("/jobs/").find();
+
+console.log(jobContent);
 </script>
