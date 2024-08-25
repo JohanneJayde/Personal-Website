@@ -10,21 +10,7 @@
         in the Computer Science field. I currently work as a Software
         Engineering Intern at IntelliTect in Spokane, WA.
       </v-card-text>
-      <v-card-actions class="d-flex justify-center">
-        <v-btn
-          href="https://github.com/JohanneJayde"
-          target="_blank"
-          variant="outlined"
-          >Github</v-btn
-        >
-
-        <v-btn
-          href="https://www.linkedin.com/in/johannemcclenahan/"
-          target="_blank"
-          variant="outlined"
-          >LinkedIn</v-btn
-        >
-      </v-card-actions>
+      <v-card-actions class="d-flex justify-center"> </v-card-actions>
     </v-card>
     <v-row>
       <v-col cols="12" lg="6">

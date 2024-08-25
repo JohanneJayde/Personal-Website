@@ -1,9 +1,22 @@
 <template>
   <v-app>
     <v-app-bar flat color="primary">
-      <v-app-bar-title class="text-center font-weight-bold">
+      <v-app-bar-title class="font-weight-bold">
         Johanne McClenahan
       </v-app-bar-title>
+      <v-spacer />
+      <v-btn
+        href="https://github.com/JohanneJayde"
+        target="_blank"
+        variant="outlined"
+        >Github</v-btn
+      >
+      <v-btn
+        href="https://www.linkedin.com/in/johannemcclenahan/"
+        target="_blank"
+        variant="outlined"
+        >LinkedIn</v-btn
+      >
     </v-app-bar>
 
     <v-main>
