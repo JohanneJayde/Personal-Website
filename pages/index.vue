@@ -15,23 +15,31 @@
             work as a software engineer.
           </v-card-text>
           <v-card-actions>
-            <v-btn to="/AboutMe" color="primary" variant="outlined"
-              >Education and More About Me!</v-btn
-            >
-            <v-btn
-              color="primary"
-              variant="outlined"
-              href="https://github.com/JohanneJayde"
-              target="_blank"
-              >Github</v-btn
-            >
-            <v-btn
-              color="primary"
-              variant="outlined"
-              href="https://www.linkedin.com/in/johannemcclenahan/"
-              target="_blank"
-              >LinkedIn</v-btn
-            >
+            <v-row dense>
+              <v-col cols="auto">
+                <v-btn to="/AboutMe" color="primary" variant="outlined"
+                  >Education and More About Me!</v-btn
+                >
+              </v-col>
+              <v-col cols="auto">
+                <v-btn
+                  color="primary"
+                  variant="outlined"
+                  href="https://github.com/JohanneJayde"
+                  target="_blank"
+                  >Github</v-btn
+                >
+              </v-col>
+              <v-col cols="auto">
+                <v-btn
+                  color="primary"
+                  variant="outlined"
+                  href="https://www.linkedin.com/in/johannemcclenahan/"
+                  target="_blank"
+                  >LinkedIn</v-btn
+                >
+              </v-col>
+            </v-row>
           </v-card-actions>
         </v-card>
         <Section title="Skills">

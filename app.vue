@@ -47,7 +47,7 @@
           :key="item"
           @click="$router.push('/' + item)"
         >
-          <v-list-item-title>{{ item }}</v-list-item-title>
+          <v-list-item-title class="text-button">{{ item }}</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
