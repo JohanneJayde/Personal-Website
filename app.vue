@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="gradient-background">
     <v-app-bar
       flat
       extension-height="40"
@@ -51,17 +51,23 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-main class="gradient-background">
+    <v-main>
       <NuxtPage />
     </v-main>
 
-    <v-footer
-      app
-      class="app-footer-custom text-button border-b-sm custom-color"
-    >
-      <span>&copy; {{ new Date().getFullYear() }} Johanne McClenahan</span>
-      <v-spacer />
-      <span>Contact: johanne.jayde@gmail.com</span>
+    <v-footer app class="border-b-sm custom-color" height="80">
+      <v-row no-gutters class="justify-center align-center">
+        <v-col cols="12" class="text-center">
+          <span class="text-button footer-content">
+            &copy; {{ new Date().getFullYear() }} Johanne McClenahan
+          </span>
+        </v-col>
+        <v-col cols="12" class="text-center">
+          <span class="text-button footer-content"
+            >Contact: johanne.jayde@gmail.com</span
+          >
+        </v-col>
+      </v-row>
     </v-footer>
   </v-app>
 </template>
