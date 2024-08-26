@@ -1,5 +1,5 @@
 <template>
-  <v-card class="pa-1 text-center my-4 custom-color">
+  <v-card class="pa-1 text-center my-4" color="transparent" elevation="0">
     <v-card-title>{{ title }}</v-card-title>
   </v-card>
   <slot name="content"></slot>

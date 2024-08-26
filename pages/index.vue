@@ -2,46 +2,49 @@
   <v-container class="fill-height">
     <v-row>
       <v-col cols="12" lg="6">
-        <v-card class="pa-3 custom-color">
-          <v-card-item>
-            <v-img src="~/assets/photography.jpeg" height="300px" cover />
-          </v-card-item>
-          <v-card-text class="text-body-1 my-3">
+        <v-col>
+          <v-img
+            src="~/assets/photography.jpeg"
+            height="300px"
+            width="100%"
+            cover
+          />
+        </v-col>
+        <v-col>
+          <span class="text-body-1 my-3">
             Hello, My name is Johanne McClenahan! I am a recent graduate from
             Eastern Washington University in June 2024. My major is Computer
             Science with a minor in Web Application Development. My hobbies
             include puzzles, hiking, and scootering. I hope to learn more and
             keep growing in the Computer Science field. I currently looking for
             work as a software engineer.
-          </v-card-text>
-          <v-card-actions>
-            <v-row dense>
-              <v-col cols="auto">
-                <v-btn to="/AboutMe" color="primary" variant="outlined"
-                  >Education and More About Me!</v-btn
-                >
-              </v-col>
-              <v-col cols="auto">
-                <v-btn
-                  color="primary"
-                  variant="outlined"
-                  href="https://github.com/JohanneJayde"
-                  target="_blank"
-                  >Github</v-btn
-                >
-              </v-col>
-              <v-col cols="auto">
-                <v-btn
-                  color="primary"
-                  variant="outlined"
-                  href="https://www.linkedin.com/in/johannemcclenahan/"
-                  target="_blank"
-                  >LinkedIn</v-btn
-                >
-              </v-col>
-            </v-row>
-          </v-card-actions>
-        </v-card>
+          </span>
+        </v-col>
+        <v-col>
+          <v-row dense>
+            <v-col cols="auto">
+              <v-btn to="/AboutMe" variant="outlined"
+                >Education and More About Me!</v-btn
+              >
+            </v-col>
+            <v-col cols="auto">
+              <v-btn
+                variant="outlined"
+                href="https://github.com/JohanneJayde"
+                target="_blank"
+                >Github</v-btn
+              >
+            </v-col>
+            <v-col cols="auto">
+              <v-btn
+                variant="outlined"
+                href="https://www.linkedin.com/in/johannemcclenahan/"
+                target="_blank"
+                >LinkedIn</v-btn
+              >
+            </v-col>
+          </v-row>
+        </v-col>
         <Section title="Skills">
           <template #content>
             <v-row>
@@ -81,8 +84,10 @@
           )"
           :key="i"
           :to="project._path"
-          class="custom-color rounded-0"
+          class="rounded-0"
           elevation="0"
+          color="transparent"
+          style="border-bottom: 2px solid rgba(0, 0, 0, 0.12)"
         >
           <v-card-title class="font-weight-bold text-wrap mb-1"
             >{{ project.title }} ({{ getDates(project) }})</v-card-title

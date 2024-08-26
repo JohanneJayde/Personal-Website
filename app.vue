@@ -98,6 +98,6 @@ const drawer = ref(false);
 }
 
 .custom-color {
-  background-color: rgba(255, 255, 255, 0.7) !important;
+  background-color: rgba(255, 255, 255, 0.4) !important;
 }
 </style>
