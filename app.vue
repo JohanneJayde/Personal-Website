@@ -1,10 +1,11 @@
 <template>
   <v-app class="gradient-background">
     <v-app-bar
+      :absolute="true"
       flat
+      :class="!$vuetify.display.mobile ? '' : 'custom-color'"
       extension-height="40"
-      class="custom-color border-b-sm d-flex"
-      density="compact"
+      :color="!$vuetify.display.mobile ? 'transparent' : ''"
     >
       <template #prepend v-if="$vuetify.display.mobile">
         <v-app-bar-nav-icon @click="drawer = !drawer" class="text-button" />
@@ -16,13 +17,28 @@
 
       <v-row v-if="!$vuetify.display.mobile">
         <v-col />
-        <v-col align="center" class="text-button cursor-pointer">
+        <v-col
+          align="center"
+          class="text-button cursor-pointer font-weight-bold"
+        >
           <span @click="$router.push('/')">Johanne McClenahan</span>
         </v-col>
         <v-col align="end">
-          <v-btn class="custom-btn" to="/Projects" text="Projects" />
-          <v-btn class="custom-btn" to="/Employment" text="Employment" />
-          <v-btn class="custom-btn" to="/Engagement" text="Public Service" />
+          <v-btn
+            class="custom-btn font-weight-bold"
+            to="/Projects"
+            text="Projects"
+          />
+          <v-btn
+            class="custom-btn font-weight-bold"
+            to="/Employment"
+            text="Employment"
+          />
+          <v-btn
+            class="custom-btn font-weight-bold"
+            to="/Engagement"
+            text="Public Service"
+          />
         </v-col>
       </v-row>
     </v-app-bar>
@@ -37,11 +53,11 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-main>
+    <v-main class="fill-height">
       <NuxtPage />
     </v-main>
 
-    <v-footer app class="border-b-sm custom-color" height="80">
+    <v-footer :absolute="true" class="border-b-sm">
       <v-row no-gutters class="justify-center align-center">
         <v-col cols="12" class="text-center">
           <span class="text-button footer-content">
