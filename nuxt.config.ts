@@ -20,4 +20,7 @@ export default defineNuxtConfig({
       },
     },
   },
+  css: [
+    "@/assets/css/global.css", // Path to your global CSS file
+  ],
 });
