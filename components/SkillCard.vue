@@ -1,6 +1,6 @@
 <template>
   <v-card class="pa-3 w-100" variant="outlined">
-    <span class="text-wrap font-weight-bold">{{ title }} </span>
+    <span class="text-wrap">{{ title }} </span>
   </v-card>
 </template>
 
