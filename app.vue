@@ -3,42 +3,28 @@
     <v-app-bar
       flat
       extension-height="40"
-      class="custom-color border-b-sm"
+      class="custom-color border-b-sm d-flex"
       density="compact"
     >
       <template #prepend v-if="$vuetify.display.mobile">
-        <v-app-bar-nav-icon
-          @click="drawer = !drawer"
-          class="text-button"
-        ></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon @click="drawer = !drawer" class="text-button" />
       </template>
 
-      <v-app-bar-title
-        class="text-button"
-        @click="$router.push('/')"
-        style="cursor: pointer"
-      >
-        Johanne McClenahan
+      <v-app-bar-title v-if="$vuetify.display.mobile" class="text-button">
+        <span @click="$router.push('/')">Johanne McClenahan</span>
       </v-app-bar-title>
-      <v-spacer v-if="!$vuetify.display.mobile" />
 
-      <v-btn v-if="!$vuetify.display.mobile" class="custom-btn" to="/Projects">
-        Projects
-      </v-btn>
-      <v-btn
-        v-if="!$vuetify.display.mobile"
-        class="custom-btn"
-        to="/Employment"
-      >
-        Employment
-      </v-btn>
-      <v-btn
-        v-if="!$vuetify.display.mobile"
-        class="custom-btn"
-        to="/Engagement"
-      >
-        Public Service
-      </v-btn>
+      <v-row v-if="!$vuetify.display.mobile">
+        <v-col />
+        <v-col align="center" class="text-button cursor-pointer">
+          <span @click="$router.push('/')">Johanne McClenahan</span>
+        </v-col>
+        <v-col align="end">
+          <v-btn class="custom-btn" to="/Projects" text="Projects" />
+          <v-btn class="custom-btn" to="/Employment" text="Employment" />
+          <v-btn class="custom-btn" to="/Engagement" text="Public Service" />
+        </v-col>
+      </v-row>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" temporary class="custom-color">
       <v-list>
@@ -98,6 +84,6 @@ const drawer = ref(false);
 }
 
 .custom-color {
-  background-color: rgba(255, 255, 255, 0.4) !important;
+  background-color: rgba(255, 255, 255, 0.6) !important;
 }
 </style>

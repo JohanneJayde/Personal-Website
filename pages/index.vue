@@ -47,7 +47,7 @@
         </v-col>
         <Section title="Skills">
           <template #content>
-            <v-row>
+            <v-row dense>
               <v-col cols="auto">
                 <SkillCard title="Java" />
               </v-col>
@@ -63,6 +63,9 @@
               </v-col>
               <v-col cols="auto">
                 <SkillCard title="C#" />
+              </v-col>
+              <v-col cols="auto">
+                <SkillCard title="ASP.NET" />
               </v-col>
               <v-col cols="auto">
                 <SkillCard title="Javascript" />
