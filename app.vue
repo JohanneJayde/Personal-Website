@@ -3,19 +3,20 @@
     <v-app-bar
       :absolute="true"
       flat
-      :class="!$vuetify.display.mobile ? '' : 'custom-color'"
+      :class="!isMobile ? '' : 'custom-color'"
       extension-height="40"
-      :color="!$vuetify.display.mobile ? 'transparent' : ''"
+      :color="!isMobile ? 'transparent' : ''"
+      dense
     >
-      <template #prepend v-if="$vuetify.display.mobile">
+      <template #prepend v-if="isMobile">
         <v-app-bar-nav-icon @click="drawer = !drawer" class="text-button" />
       </template>
 
-      <v-app-bar-title v-if="$vuetify.display.mobile" class="text-button">
+      <v-app-bar-title v-if="isMobile" class="text-button">
         <span @click="$router.push('/')">Johanne McClenahan</span>
       </v-app-bar-title>
 
-      <v-row v-if="!$vuetify.display.mobile">
+      <v-row v-if="!isMobile">
         <v-col />
         <v-col
           align="center"
@@ -75,6 +76,8 @@
 </template>
 
 <script setup lang="ts">
+import { useDisplay } from "vuetify";
+
 useHead({
   title: "Johanne McClenahan",
   meta: [
@@ -83,6 +86,13 @@ useHead({
       content: "Johanne McClenahan Portfolio",
     },
   ],
+});
+
+const isMobile = ref(false);
+const display = useDisplay();
+
+nextTick(() => {
+  isMobile.value = display.mobile.value;
 });
 
 const drawer = ref(false);
