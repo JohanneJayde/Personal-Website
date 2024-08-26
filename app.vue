@@ -18,7 +18,7 @@
         <v-col align="center" cols="6">
           <v-app-bar-title
             @click="$router.push('/')"
-            class="text-button font-weight-bold cursor-pointer"
+            class="text-button font-weight-bold cursor-pointer fill-height d-flex justify-center align-center"
           >
             Johanne McClenahan
           </v-app-bar-title>
