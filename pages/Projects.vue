@@ -45,6 +45,4 @@
 
 <script setup lang="ts">
 const projectContent = await queryContent("/project/").find();
-
-console.log(projectContent);
 </script>

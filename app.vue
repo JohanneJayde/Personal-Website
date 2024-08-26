@@ -17,8 +17,10 @@
         target="_blank"
         >LinkedIn</v-btn
       >
-      <v-btn value="project" @click="toProjects"> Projects </v-btn>
-      <template #extension v-if="viewMode">
+      <v-btn to="/Projects"> Projects </v-btn>
+      <v-btn to="/Employment"> Employment </v-btn>
+      <v-btn to="/Engagement"> Public Service </v-btn>
+      <template #extension v-if="onProjects">
         <v-slide-group class="fill-height">
           <v-slide-group-item>
             <v-btn
@@ -66,29 +68,26 @@ const viewMode = ref<string | null>(null);
 
 const router = useRouter();
 const route = useRoute();
+
+const onProjects = ref<boolean>(false);
+
 const returnHome = () => {
   router.push("/");
-  viewMode.value = null;
+  onProjects.value = false;
 };
 
-const toProjects = () => {
-  router.push("/projects");
-  viewMode.value = "project";
-};
-
-watch(route, () => {
-  if (route.path === "/projects" || route.path.match("/project/")) {
-    viewMode.value = "project";
-  } else {
-    viewMode.value = null;
-  }
-});
-
-onMounted(() => {
-  if (route.path === "/projects" || route.path.match("/project/")) {
-    viewMode.value = "project";
-  }
-});
+watch(
+  route,
+  () => {
+    if (route.path === "/projects" || route.path.match("/project/")) {
+      onProjects.value = true;
+    } else {
+      onProjects.value = false;
+    }
+    console.log(route.path);
+  },
+  { immediate: true }
+);
 </script>
 
 <style scropped>
