@@ -1,7 +1,9 @@
 title: Geospatial Visualization Notification System
 description: This project was a collaboration between Eastern Washington University and Fairchild Airforce Base. We created a wildfire notification system for the Fairchild Airforce Base using open source data from the National Interagency Fire Center.
 category: projects
-date: 03/24 - Pressent
+dates:
+  - start: 2023-09
+    end: 2024-03
 techStack:
   - PHP
   - HTML

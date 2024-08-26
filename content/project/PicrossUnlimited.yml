@@ -1,7 +1,9 @@
 title: Picross Unlimited
 description: Picross Unlimited is a Picross clone built using Vue.js and ASP.NET Core.
 category: projects
-date: 03/24 - Pressent
+dates:
+  - start: 2024-06
+    end: Pressent
 techStack:
   - Vue.js
   - ASP.NET Core

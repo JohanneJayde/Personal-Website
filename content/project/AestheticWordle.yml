@@ -1,7 +1,9 @@
 title: Aesthetic Wordle
 description: Aesthetic Wordle is a Wordle clone with a focus on aesthetics and user experience. It is built using Nuxt.js and ASP.NET Core.
 category: projects
-date: 03/24 - Pressent
+dates:
+  - start: 2024-03
+    end: Pressent
 techStack:
   - Nuxt.js (Vue.js)
   - ASP.NET Core

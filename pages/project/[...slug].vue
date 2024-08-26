@@ -7,19 +7,17 @@
       {{ data.description }}
     </v-col>
     <v-col>
-      <v-sheet class="pa-2">
-        <h3 class="mb-2">Technologies Used:</h3>
-        <v-row no-gutters>
-          <v-col
-            cols="auto"
-            class="mr-2 mb-2"
-            v-for="tech in data.techStack"
-            :key="tech"
-          >
-            <v-chip>{{ tech }}</v-chip>
-          </v-col>
-        </v-row>
-      </v-sheet>
+      <h3 class="mb-2">Technologies Used:</h3>
+      <v-row no-gutters>
+        <v-col
+          cols="auto"
+          class="mr-2 mb-2"
+          v-for="tech in data.techStack"
+          :key="tech"
+        >
+          <v-chip>{{ tech }}</v-chip>
+        </v-col>
+      </v-row>
     </v-col>
     <v-col>
       <h3>Features:</h3>

@@ -1,16 +1,13 @@
 <template>
   <v-container>
-    <v-card color="primary" class="rounded-xl pa-3">
-      <v-card-title>About Me</v-card-title>
-      <v-card-text class="text-body-1">
-        Hello, My name is Johanne McClenahan! I am currently a recent graduate
-        from Eastern Washington University in June 2024. My major is Computer
-        Science with a minor in Web Application Development. My hobbies include
-        puzzles, hiking, and scootering. I hope to learn more and keep growing
-        in the Computer Science field. I currently work look for work as a
-        software engineer.
-      </v-card-text>
-    </v-card>
+    <v-img src="~/assets/photography.jpeg" height="400px" cover />
+    <div class="text-body-1 mt-3">
+      Hello, My name is Johanne McClenahan! I am a recent graduate from Eastern
+      Washington University in June 2024. My major is Computer Science with a
+      minor in Web Application Development. My hobbies include puzzles, hiking,
+      and scootering. I hope to learn more and keep growing in the Computer
+      Science field. I currently looking for work as a software engineer.
+    </div>
     <Section title="Education & Accolades">
       <template #content>
         <v-row>
@@ -49,3 +46,8 @@
     </Section>
   </v-container>
 </template>
+<style scoped>
+.custom-color {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+</style>
