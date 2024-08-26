@@ -1,0 +1,22 @@
+title: Picross Unlimited
+description: Picross Unlimited is a Picross clone built using Vue.js and ASP.NET Core.
+category: projects
+dates:
+  - start: 2024-06
+    end: Pressent
+techStack:
+  - Vue.js
+  - ASP.NET Core
+  - Azure
+  - GitHub Actions
+  - GitHub
+features:
+  - Create, Update, Delete, and Read puzzles
+  - See your games you have played
+  - Create your own puzzles using a editor
+  - Play Picross puzzles
+
+stinger: Created a Picross clone using Vue.js and Vuetify. The game is a puzzle game where the player fills in squares on a grid to reveal a picture. Users can preform CRUD operations on the game to create their own puzzles.
+links:
+  - text: Github
+    href: https://github.com/JohanneJayde/Picross-Unlimited

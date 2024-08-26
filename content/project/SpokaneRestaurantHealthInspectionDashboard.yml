@@ -1,0 +1,20 @@
+title: Spokane Restaurant Health Inspection Dashboard
+description: A dashboard that displays health inspection data for restaurants in Spokane, WA. The dashboard is designed to be user-friendly and informative.
+category: projects
+dates:
+  - start: 2023-11
+techStack:
+  - Flask
+  - HTML
+  - CSS
+  - JS
+  - Google Maps API
+features:
+  - Search for restaurants by name
+  - View health inspection data for restaurants
+  - View restaurant locations on a map
+
+stinger: Competed in the GU Hackathon in November 2023 for twelve hours among 120 other students. Led a team of four students in creating a web application. The project was a dashboard for viewing restaurant health inspections in the Spokane area.
+links:
+  - text: Github
+    href: "https://github.com/JohanneJayde/Spokane-Restaurant-Health-Inspection-Dashboard"

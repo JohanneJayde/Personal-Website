@@ -1,0 +1,28 @@
+title: Geospatial Visualization Notification System
+description: This project was a collaboration between Eastern Washington University and Fairchild Airforce Base. We created a wildfire notification system for the Fairchild Airforce Base using open source data from the National Interagency Fire Center.
+category: projects
+dates:
+  - start: 2023-09
+    end: 2024-03
+techStack:
+  - PHP
+  - HTML
+  - CSS
+  - JS
+  - Laragon
+  - MySQL
+  - GitHub
+  - OpenLayers
+  - Esri
+features:
+  - Utilized open source data from the National Interagency Fire Center
+  - Displays dashboard of wildfire data within the Spokane Area along with uploaded addresses
+  - Upload and display csv files of service members and their information
+  - Calculate the distance between the uploaded addresses and selected wildfires
+  - Download the calculated distances for each uploaded user as a csv file
+  - Warnings are displayed for service members within a certain distance of a wildfire
+
+stinger: Created a wildfire notification system for the Fairchild Airforce Base using open source data from the National Interagency Fire Center. The tech stack for this project was vanilla HTML, CSS, and JS with PHP. We utilzed the OpenLayers API to display map data. The project was a collaboration between Eastern Washington University and Fairchild Airforce Base.
+links:
+  - text: "Github"
+    href: "https://github.com/JohanneJayde/geospatial-visualization-notification-system"

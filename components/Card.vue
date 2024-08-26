@@ -1,5 +1,5 @@
 <template>
-  <v-card class="pa-3 rounded-xl h-100">
+  <v-card class="pa-3 h-100 custom-color">
     <v-card-title class="text-wrap font-weight-bold text-secondary">{{
       title
     }}</v-card-title>
@@ -21,12 +21,6 @@
   </v-card>
 </template>
 
-<style scoped>
-.v-card {
-  border: 4px solid rgb(var(--v-theme-primary));
-}
-</style>
-
 <script setup lang="ts">
 defineProps<{
   title: string;
@@ -36,3 +30,9 @@ defineProps<{
   links?: { text: string; href: string }[];
 }>();
 </script>
+
+<style scoped>
+.custom-color {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+</style>

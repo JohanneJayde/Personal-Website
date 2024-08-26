@@ -1,0 +1,16 @@
+title: Iterations
+description: Participated in the Internal Hackathon at Intellitect over a 24 hour period. Game was made using Unreal Engine 5. Made player environments and worked on the dialogue for the game.
+category: projects
+dates:
+  - start: 2024-03
+techStack:
+  - C++
+  - Unreal Engine
+features:
+  - Interactive story
+  - Play with multiple endings
+
+stinger: Participated in the Internal Hackathon at Intellitect over a 24 hour period. Game was made using Unreal Engine 5. Made player environments and worked on the dialogue for the game.
+links:
+  - text: Steam
+    href: https://store.steampowered.com/app/2937490/Iterations/

@@ -1,0 +1,23 @@
+title: Eagle Adventures
+description: Developed a Quest app for the EWU Summer Bridge program. The application was developed using C# and Unity to work on IOS and Android devices. The app was used to help students navigate the campus and learn about the resources available to them.
+category: projects
+dates:
+  - start: 2023-06
+    end: 2023-08
+techStack:
+  - C#
+  - Unity
+  - Firebase
+  - AppScript
+features:
+  - Complete quests to learn about the EWU departments
+  - Gain coins for completing quests
+  - Redeem coins by entering codes from the departments at the end of the event
+  - "Four different types of quests: canvas, no-code, physical, and short answer"
+  - Interactive tutorial for showing how to complete quests and use the app
+  - Navigate to the canvas app from the app to view canvas quests
+
+stinger: Developed a Quest app for the EWU Summer Bridge program. The application was developed using C# and Unity to work on IOS and Android devices. The app was used to help students navigate the campus and learn about the resources available to them.
+links:
+  - text: Github
+    href: https://github.com/JohanneJayde/Eagle-Adventures
