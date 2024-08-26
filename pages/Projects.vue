@@ -1,24 +1,18 @@
 <template>
   <v-container>
     <v-row>
-      <v-col>
-        <h3>
-          These are some of the projects I have worked on. Click on a project to
-          learn more.
-        </h3>
-      </v-col>
-    </v-row>
-    <v-row>
       <v-col cols="12" lg="6" v-for="(project, i) in projectContent" :key="i">
-        <v-card elevation="3" class="pa-2 fill-height">
-          <v-card-title class="font-weight-bold text-wrap">{{
-            project.title
-          }}</v-card-title>
+        <v-card elevation="3" class="pa-2 fill-height custom-color">
+          <v-card-title class="font-weight-bold text-wrap">
+            {{ project.title }}
+          </v-card-title>
           <v-card-text>{{ project.stinger }}</v-card-text>
           <v-card-item>
             <v-chip
               v-for="tech in project.techStack"
               :key="tech"
+              variant="tonal"
+              color="primary"
               class="mr-2 mb-2"
               >{{ tech }}</v-chip
             >
@@ -46,3 +40,9 @@
 <script setup lang="ts">
 const projectContent = await queryContent("/project/").find();
 </script>
+
+<style scoped>
+.custom-color {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+</style>

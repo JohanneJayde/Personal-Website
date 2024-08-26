@@ -1,8 +1,13 @@
 <template>
   <v-app>
-    <v-app-bar flat color="primary" extension-height="40">
+    <v-app-bar
+      flat
+      extension-height="40"
+      class="app-bar-custom border-b-sm"
+      density="compact"
+    >
       <v-app-bar-title
-        class="font-weight-bold"
+        class="text-button"
         @click="returnHome"
         style="cursor: pointer"
       >
@@ -17,9 +22,9 @@
         target="_blank"
         >LinkedIn</v-btn
       >
-      <v-btn to="/Projects"> Projects </v-btn>
-      <v-btn to="/Employment"> Employment </v-btn>
-      <v-btn to="/Engagement"> Public Service </v-btn>
+      <v-btn class="custom-btn" to="/Projects"> Projects </v-btn>
+      <v-btn class="custom-btn" to="/Employment"> Employment </v-btn>
+      <v-btn class="custom-btn" to="/Engagement"> Public Service </v-btn>
       <template #extension v-if="onProjects">
         <v-slide-group class="fill-height">
           <v-slide-group-item>
@@ -39,11 +44,11 @@
       </template>
     </v-app-bar>
 
-    <v-main>
+    <v-main class="gradient-background">
       <NuxtPage />
     </v-main>
 
-    <v-footer app color="primary">
+    <v-footer app class="app-footer-custom text-button border-b-sm">
       <span>&copy; {{ new Date().getFullYear() }} Johanne McClenahan</span>
       <v-spacer />
       <span>Contact: johanne.jayde@gmail.com</span>
@@ -90,8 +95,17 @@ watch(
 );
 </script>
 
-<style scropped>
-.styled-group {
-  margin: 0;
+<style scoped>
+.gradient-background {
+  background-image: linear-gradient(to right bottom, #cda9fd, #dfd2fe, #f9f9f9);
+  min-height: 100vh; /* Ensures the background covers the full height */
+}
+
+.app-bar-custom {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.app-footer-custom {
+  background-color: rgba(255, 255, 255, 0.3) !important;
 }
 </style>

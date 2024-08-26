@@ -1,13 +1,8 @@
 <template>
   <v-container>
     <v-row>
-      <v-col>
-        <h3>Jobs that I have had</h3>
-      </v-col>
-    </v-row>
-    <v-row>
       <v-col cols="12" lg="6" v-for="(job, i) in employmentContent" :key="i">
-        <v-card elevation="3" class="pa-2 fill-height">
+        <v-card elevation="3" class="pa-2 fill-height custom-color">
           <v-card-title class="font-weight-bold text-wrap">{{
             job.title
           }}</v-card-title>
@@ -22,3 +17,8 @@
 <script setup lang="ts">
 const employmentContent = await queryContent("/employment/").find();
 </script>
+<style scoped>
+.custom-color {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+</style>
