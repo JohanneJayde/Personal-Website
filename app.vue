@@ -1,30 +1,29 @@
 <template>
   <v-app class="gradient-background">
-    <v-app-bar
-      :absolute="true"
-      flat
-      :class="!isMobile ? '' : 'custom-color'"
-      extension-height="40"
-      :color="!isMobile ? 'transparent' : ''"
-      dense
-    >
-      <template #prepend v-if="isMobile">
+    <v-app-bar flat dense v-if="isMobile" class="custom-color">
+      <template #prepend>
         <v-app-bar-nav-icon @click="drawer = !drawer" class="text-button" />
       </template>
 
-      <v-app-bar-title v-if="isMobile" class="text-button">
-        <span @click="$router.push('/')">Johanne McClenahan</span>
+      <v-app-bar-title
+        @click="$router.push('/')"
+        class="text-button font-weight-bold cursor-pointer"
+      >
+        Johanne McClenahan
       </v-app-bar-title>
-
-      <v-row v-if="!isMobile">
-        <v-col />
-        <v-col
-          align="center"
-          class="text-button cursor-pointer font-weight-bold"
-        >
-          <span @click="$router.push('/')">Johanne McClenahan</span>
+    </v-app-bar>
+    <v-app-bar v-else :absolute="true" flat color="transparent">
+      <v-row>
+        <v-col cols="3" />
+        <v-col align="center" cols="6">
+          <v-app-bar-title
+            @click="$router.push('/')"
+            class="text-button font-weight-bold cursor-pointer"
+          >
+            Johanne McClenahan
+          </v-app-bar-title>
         </v-col>
-        <v-col align="end">
+        <v-col cols="3">
           <v-btn
             class="custom-btn font-weight-bold"
             to="/Projects"
