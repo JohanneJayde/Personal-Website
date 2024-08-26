@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="fill-height">
     <v-row>
       <v-col cols="12" lg="6">
         <v-card class="pa-3 custom-color">
@@ -74,7 +74,7 @@
           </template>
         </Section>
       </v-col>
-      <v-col cols="12" lg="6">
+      <v-col cols="12" lg="6" class="d-flex flex-column">
         <v-card
           v-for="(project, i) in projectContent.sort((a, b) =>
             a.dates[0].start < b.dates[0].start ? 1 : -1
