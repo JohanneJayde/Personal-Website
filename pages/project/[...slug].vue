@@ -31,6 +31,7 @@
         :key="link.href"
         :href="link.href"
         target="_blank"
+        variant="outlined"
       >
         {{ link.text }}
       </v-btn>

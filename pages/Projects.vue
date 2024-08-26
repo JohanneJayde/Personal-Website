@@ -1,11 +1,21 @@
 <template>
   <v-container>
     <v-row>
-      <v-col cols="12" lg="6" v-for="(project, i) in projectContent" :key="i">
+      <v-col
+        cols="12"
+        lg="6"
+        v-for="(project, i) in projectContent.sort((a, b) =>
+          a.dates[0].start < b.dates[0].start ? 1 : -1
+        )"
+        :key="i"
+      >
         <v-card elevation="3" class="pa-2 fill-height custom-color">
           <v-card-title class="font-weight-bold text-wrap">
             {{ project.title }}
           </v-card-title>
+          <v-card-subtitle class="text-wrap">
+            {{ getDates(project) }}
+          </v-card-subtitle>
           <v-card-text>{{ project.stinger }}</v-card-text>
           <v-card-item>
             <v-chip
@@ -38,7 +48,26 @@
 </template>
 
 <script setup lang="ts">
+import type { ParsedContent } from "@nuxt/content/types";
+import { format } from "date-fns";
+
 const projectContent = await queryContent("/project/").find();
+
+const getDates = (project: ParsedContent) => {
+  const formatStartDate = format(new Date(project.dates[0].start), "MMMM yyyy");
+  const formatEndDate =
+    project.dates[0].end == "Pressent" || !project.dates[0].end
+      ? null
+      : format(new Date(project.dates[0].end), "MMMM yyyy");
+  const dateString = formatStartDate;
+
+  if (project.dates[0].end === "Pressent") {
+    return `${dateString} - Present`;
+  } else if (project.dates[0].end == null) {
+    return `${dateString}`;
+  }
+  return `${dateString} - ${formatEndDate}`;
+};
 </script>
 
 <style scoped>

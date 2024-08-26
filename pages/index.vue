@@ -68,15 +68,17 @@
       </v-col>
       <v-col cols="12" lg="6">
         <v-card
-          v-for="(project, i) in projectContent"
+          v-for="(project, i) in projectContent.sort((a, b) =>
+            a.dates[0].start < b.dates[0].start ? 1 : -1
+          )"
           :key="i"
           :to="project._path"
           class="custom-color rounded-0"
           elevation="0"
         >
-          <v-card-title class="font-weight-bold text-wrap mb-1">{{
-            getTitle(project)
-          }}</v-card-title>
+          <v-card-title class="font-weight-bold text-wrap mb-1"
+            >{{ project.title }} ({{ getDates(project) }})</v-card-title
+          >
           <v-card-text>{{ project.stinger }}</v-card-text>
         </v-card>
       </v-col>
@@ -90,7 +92,7 @@ import { format } from "date-fns";
 
 const projectContent = await queryContent("/project/").find();
 
-const getTitle = (project: ParsedContent) => {
+const getDates = (project: ParsedContent) => {
   const formatStartDate = format(new Date(project.dates[0].start), "MMMM yyyy");
   const formatEndDate =
     project.dates[0].end == "Pressent" || !project.dates[0].end
@@ -99,11 +101,11 @@ const getTitle = (project: ParsedContent) => {
   const dateString = formatStartDate;
 
   if (project.dates[0].end === "Pressent") {
-    return `${project.title} (${dateString} - Present)`;
+    return `${dateString} - Present`;
   } else if (project.dates[0].end == null) {
-    return `${project.title} (${dateString})`;
+    return `${dateString}`;
   }
-  return `${project.title} (${dateString} - ${formatEndDate})`;
+  return `${dateString} - ${formatEndDate}`;
 };
 </script>
 

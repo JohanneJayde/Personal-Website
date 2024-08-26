@@ -1,25 +1,20 @@
 title: Spokane Restaurant Health Inspection Dashboard
-description: Aesthetic Wordle is a Wordle clone with a focus on aesthetics and user experience. It is built using Nuxt.js and ASP.NET Core.
+description: A dashboard that displays health inspection data for restaurants in Spokane, WA. The dashboard is designed to be user-friendly and informative.
 category: projects
 dates:
   - start: 2023-11
 techStack:
-  - Nuxt.js (Vue.js)
-  - ASP.NET Core
-  - Azure
-  - GitHub Actions
-  - Jest
-  - GitHub
+  - Flask
+  - HTML
+  - CSS
+  - JS
+  - Google Maps API
 features:
-  - Wordle clone with a focus on aesthetics and user experience
-  - multiple themes
-  - View statistics of your games
-  - Rank yourself with leaderboard
-  - replay old games
+  - Search for restaurants by name
+  - View health inspection data for restaurants
+  - View restaurant locations on a map
 
-stinger: Created a Wordle clone using Vue.js and Vuetify. The game is a word guessing game where the player has six chances to guess the word. The game is responsive and can be played on mobile devices.
+stinger: Competed in the GU Hackathon in November 2023 for twelve hours among 120 other students. Led a team of four students in creating a web application. The project was a dashboard for viewing restaurant health inspections in the Spokane area.
 links:
-  - text: "Github"
-    href: "https://github.com/JohanneJayde/Aesthetic-Wordle"
-  - text: "Play"
-    href: "https://aestheticwordle.com/"
+  - text: Github
+    href: "https://github.com/JohanneJayde/Spokane-Restaurant-Health-Inspection-Dashboard"
