@@ -1,6 +1,6 @@
 <template>
   <v-app class="gradient-background">
-    <v-app-bar flat dense v-if="isMobile" class="custom-color">
+    <v-app-bar flat dense v-if="isMobile" class="custom-color" id="navbar">
       <template #prepend>
         <v-app-bar-nav-icon @click="drawer = !drawer" class="text-button" />
       </template>
@@ -53,7 +53,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-main class="fill-height">
+    <v-main class="fill-height" id="main-content">
       <NuxtPage />
     </v-main>
 
@@ -92,6 +92,10 @@ const display = useDisplay();
 
 nextTick(() => {
   isMobile.value = display.mdAndDown.value;
+});
+
+watch(display.mdAndDown, (value) => {
+  isMobile.value = value;
 });
 
 const drawer = ref(false);
