@@ -14,8 +14,8 @@
     </v-app-bar>
     <v-app-bar v-else :absolute="true" flat color="transparent">
       <v-row>
-        <v-col cols="3" />
-        <v-col align="center" cols="6">
+        <v-col />
+        <v-col>
           <v-app-bar-title
             @click="$router.push('/')"
             class="text-button font-weight-bold cursor-pointer fill-height d-flex justify-center align-center"
@@ -23,7 +23,7 @@
             Johanne McClenahan
           </v-app-bar-title>
         </v-col>
-        <v-col cols="3">
+        <v-col>
           <v-btn
             class="custom-btn font-weight-bold"
             to="/Projects"
@@ -91,7 +91,7 @@ const isMobile = ref(false);
 const display = useDisplay();
 
 nextTick(() => {
-  isMobile.value = display.mobile.value;
+  isMobile.value = display.mdAndDown.value;
 });
 
 const drawer = ref(false);
