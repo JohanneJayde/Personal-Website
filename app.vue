@@ -78,7 +78,7 @@
 import { useDisplay } from "vuetify";
 
 useHead({
-  title: "Johanne McClenahan",
+  title: "Johanne McClenahan's Personal Website",
   meta: [
     {
       name: "description",

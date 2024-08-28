@@ -1,6 +1,9 @@
 <template>
   <v-container>
     <v-row>
+      <v-col cols="12">
+        <h1 class="text-h5 font-weight-bold">Employment</h1>
+      </v-col>
       <v-col cols="12" lg="6" v-for="(job, i) in employmentContent" :key="i">
         <v-card elevation="3" class="pa-2 fill-height custom-color">
           <v-card-title class="font-weight-bold text-wrap">{{
