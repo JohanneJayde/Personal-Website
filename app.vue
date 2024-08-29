@@ -30,6 +30,7 @@
                 active-class="active"
                 to="/Projects"
                 class="text-button font-weight-bold"
+                aria-label="Go to Projects Page"
                 >Projects
               </RouterLink>
             </v-col>
@@ -38,6 +39,7 @@
                 active-class="active"
                 to="/Employment"
                 class="text-button font-weight-bold"
+                aria-label="Go to Employment Page"
                 >Employment
               </RouterLink>
             </v-col>
@@ -46,6 +48,7 @@
                 active-class="active"
                 to="/Engagement"
                 class="text-button font-weight-bold"
+                aria-label="Go to Engagement Page"
                 >Public Service
               </RouterLink>
             </v-col>
@@ -123,6 +126,16 @@ const drawer = ref(false);
   );
 }
 
+a {
+  color: black;
+  transition: border-bottom 0.1s ease;
+}
+
+a:hover {
+  padding-bottom: 0.75em;
+  border-bottom: 2px solid rgba(var(--v-theme-primary), 1);
+}
+
 a:link {
   text-decoration: none;
 }
@@ -133,7 +146,7 @@ a:visited {
 
 .active {
   text-decoration: none;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.75em;
   border-bottom: 2px solid rgba(var(--v-theme-primary), 1);
 }
 
