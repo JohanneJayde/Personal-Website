@@ -16,7 +16,7 @@
           <v-card-title class="font-weight-bold text-wrap">
             {{ project.title }}
           </v-card-title>
-          <v-card-subtitle class="text-wrap">
+          <v-card-subtitle class="text-wrap mt-n2">
             {{ getDates(project) }}
           </v-card-subtitle>
           <v-card-text>{{ project.stinger }}</v-card-text>

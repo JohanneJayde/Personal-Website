@@ -1,7 +1,7 @@
 <template>
-  <v-card class="pa-3 w-100" variant="outlined">
+  <v-chip class="pa-3 w-100" variant="outlined" size="large">
     <span class="text-wrap">{{ title }} </span>
-  </v-card>
+  </v-chip>
 </template>
 
 <script setup lang="ts">

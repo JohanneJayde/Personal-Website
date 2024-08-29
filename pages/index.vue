@@ -48,33 +48,8 @@
         <Section title="Skills">
           <template #content>
             <v-row dense>
-              <v-col cols="auto">
-                <SkillCard title="Java" />
-              </v-col>
-
-              <v-col cols="auto">
-                <SkillCard title="HTML" />
-              </v-col>
-              <v-col cols="auto">
-                <SkillCard title="CSS" />
-              </v-col>
-              <v-col cols="auto">
-                <SkillCard title="SQL" />
-              </v-col>
-              <v-col cols="auto">
-                <SkillCard title="C#" />
-              </v-col>
-              <v-col cols="auto">
-                <SkillCard title="ASP.NET" />
-              </v-col>
-              <v-col cols="auto">
-                <SkillCard title="Javascript" />
-              </v-col>
-              <v-col cols="auto">
-                <SkillCard title="Vue.js" />
-              </v-col>
-              <v-col cols="auto">
-                <SkillCard title="WordPress" />
+              <v-col cols="auto" v-for="(skill, i) in skills">
+                <SkillCard :key="i" :title="skill" />
               </v-col>
             </v-row>
           </template>
@@ -92,9 +67,12 @@
           color="transparent"
           style="border-bottom: 2px solid rgba(0, 0, 0, 0.12)"
         >
-          <v-card-title class="font-weight-bold text-wrap mb-1"
-            >{{ project.title }} ({{ getDates(project) }})</v-card-title
-          >
+          <v-card-title class="font-weight-bold text-wrap"
+            >{{ project.title }}
+          </v-card-title>
+          <v-card-subtitle class="mt-n2">{{
+            getDates(project)
+          }}</v-card-subtitle>
           <v-card-text>{{ project.stinger }}</v-card-text>
         </v-card>
       </v-col>
@@ -123,6 +101,18 @@ const getDates = (project: ParsedContent) => {
   }
   return `${dateString} - ${formatEndDate}`;
 };
+
+const skills = [
+  "Java",
+  "HTML",
+  "CSS",
+  "SQL",
+  "C#",
+  "ASP.NET",
+  "JavaScript",
+  "Vue",
+  "WordPress",
+];
 </script>
 
 <style scoped>
