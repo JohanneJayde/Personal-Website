@@ -23,22 +23,33 @@
             Johanne McClenahan
           </v-app-bar-title>
         </v-col>
-        <v-col>
-          <v-btn
-            class="custom-btn font-weight-bold"
-            to="/Projects"
-            text="Projects"
-          />
-          <v-btn
-            class="custom-btn font-weight-bold"
-            to="/Employment"
-            text="Employment"
-          />
-          <v-btn
-            class="custom-btn font-weight-bold"
-            to="/Engagement"
-            text="Public Service"
-          />
+        <v-col justify="center">
+          <v-row align="center">
+            <v-col cols="auto">
+              <RouterLink
+                active-class="active"
+                to="/Projects"
+                class="text-button font-weight-bold"
+                >Projects
+              </RouterLink>
+            </v-col>
+            <v-col cols="auto">
+              <RouterLink
+                active-class="active"
+                to="/Employment"
+                class="text-button font-weight-bold"
+                >Employment
+              </RouterLink>
+            </v-col>
+            <v-col cols="auto">
+              <RouterLink
+                active-class="active"
+                to="/Engagement"
+                class="text-button font-weight-bold"
+                >Public Service
+              </RouterLink>
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
     </v-app-bar>
@@ -110,6 +121,20 @@ const drawer = ref(false);
     #f5dbff,
     rgb(211, 193, 255)
   );
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  text-decoration: none;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid rgba(var(--v-theme-primary), 1);
 }
 
 .custom-color {
